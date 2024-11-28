@@ -1,0 +1,75 @@
+/* Body styling for light mode */
+body {
+    background-color: #fff; /* Light background color */
+    color: #000; /* Dark text color */
+    transition: background-color 0.3s, color 0.3s; /* Smoothened transition for color changes */
+}
+
+/* Header and footer styling */
+header, footer {
+    background-color: #f1f1f1; /* Light grey background */
+    color: #333; /* Dark grey text */
+    padding: 10px; /* Padding around the content */
+    text-align: center; /* Center the text */
+}
+
+/* Sticky header - stays fixed at the top */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures header stays above other content */
+}
+
+/* Styling for unordered list */
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes the default padding */
+}
+
+/* Image container for centering the image */
+.image-container {
+    text-align: center; /* Centers the image horizontally */
+}
+
+/* Image styling */
+#mj-image {
+    width: 100%; /* Full width, but will still be limited by max-width */
+    max-width: 300px; /* Maximum width for the image */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth zoom effect on hover */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+header.dark-mode, footer.dark-mode {
+    background-color: #555; /* Darker background for header and footer */
+    color: #ddd; /* Light grey text */
+}
+
+/* Button styling */
+#dark-mode-toggle {
+    padding: 10px 20px; /* Button padding */
+    background-color: #555; /* Dark background */
+    color: white; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Change cursor to pointer when hovered */
+}
+
+/* Button hover effect */
+#dark-mode-toggle:hover {
+    background-color: #888; /* Lighter background color on hover */
+}
+
+/* Image Hover Effect: To Zoom-in on image hover */
+#mj-image:hover {
+    transform: scale(1.1); /* Zoom in the image slightly */
+}
+
+/* Smooth Scrolling for anchor links */
+html {
+    scroll-behavior: smooth; /* Smooth scroll between sections */
+}
